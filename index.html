@@ -9,5 +9,23 @@
 <body>
     <h1>Registration Form</h1>
     <p>Please join the following form to receive constant news about the site!</p>
+    <form action="https://register-demo.freecodecamp.org" method="post"></form>
+    <fieldset>
+        <label for="first-name">Enter your First Name: <input id="first-name" type="text" required></label>
+        <label for="last-name">Enter your Last Name: <input id="last-name" type="text" required></label>
+        <label for="email">Enter your Email Name: <input id="email" type="email" required></label>
+        <label for="new-password">Create New Password: <input id="new-password" type="password" required pattern="[a-z0-5]{8,}"></label>
+    </fieldset>
+    <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="personal-account"><input type="radio" name="account-type" id="personal-account"> Personal</label>
+        <label for="business-account"><input type="radio" name="account-type" id="business-account"> Business</label>
+        <label for="normal-user"><input type="radio" name="account-type" id="normal-user"> Normal User</label>
+    </fieldset>
+    <fieldset>
+        <label for="upload-file">Upload your profile picture: <input type="file"></label>
+        <label for="your-age"><input type="number" min="13" max="120"></label>
+    </fieldset>
+    <input type="submit" value="Submit">
 </body>
 </html>
